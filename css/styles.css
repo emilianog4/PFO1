@@ -68,15 +68,15 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 4. Sección de Tarjetas (Requerimiento Flexbox/Grid) [cite: 55, 171] */
-.contenedor-tarjetas {
+/* 4. Sección de Proyectos (Requerimiento Flexbox/Grid) [cite: 55, 171] */
+.contenedor-proyectos {
   display: flex; /* Organización obligatoria con Flexbox [cite: 75] */
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around;
 }
 
-.tarjeta {
+.proyectos {
   flex: 1 1 300px; /* Unidades relativas para responsividad [cite: 76, 183] */
   border: 1px solid #ddd;
   padding: 1rem;
@@ -84,11 +84,11 @@ section {
   transition: transform 0.3s ease; /* Animación hover obligatoria [cite: 152, 183] */
 }
 
-.tarjeta:hover {
+.proyectos:hover {
   transform: translateY(-10px); /* Efecto hover [cite: 81] */
 }
 
-.tarjeta img {
+.proyectos img {
   max-width: 100%; /* Unidades relativas en imágenes [cite: 76, 147] */
   height: auto;
   border-radius: 4px;
