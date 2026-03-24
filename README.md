@@ -1,6 +1,6 @@
 # Landing Page
 
-Este proyecto consiste en el desarrollo de una Landing Page para un portafolio personal, desarrollada para el IFTS 29 para la materia de Desarrollo Web Front End. Se utilizaron tecnologías de HTML5 y CSS3 siguiendo una estructura semántica y diseño responsivo.
+Este proyecto consiste en el desarrollo de una Landing Page, desarrollada para el IFTS 29 para la materia de Desarrollo Web Front End. Se utilizaron tecnologías de HTML5 y CSS3 siguiendo una estructura semántica y diseño responsivo.
 
 ## URL de GitHub Pages
 
