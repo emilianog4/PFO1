@@ -1,0 +1,131 @@
+/* 1. Importación y Estilos Globales */
+:root {
+  --color-principal: #2c3e50;
+  --color-secundario: #3498db;
+  --color-fondo: #f4f4f4;
+  --fuente-base:
+    'Roboto', sans-serif; /* Uso obligatorio de Google Fonts [cite: 25, 73] */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-base);
+  line-height: 1.6;
+  background-color: var(--color-fondo);
+  color: #333;
+}
+
+/* 2. Layout y Organización [cite: 74, 141] */
+header {
+  background: var(--color-principal);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  background: #444;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex; /* Uso de Flexbox para la navegación [cite: 75] */
+  justify-content: center;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: background 0.3s; /* Preparando para animación hover [cite: 81] */
+}
+
+nav a:hover {
+  background: var(--color-secundario);
+}
+
+/* 3. Secciones Principales */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 4. Sección de Tarjetas (Requerimiento Flexbox/Grid) [cite: 55, 171] */
+.contenedor-tarjetas {
+  display: flex; /* Organización obligatoria con Flexbox [cite: 75] */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.tarjeta {
+  flex: 1 1 300px; /* Unidades relativas para responsividad [cite: 76, 183] */
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease; /* Animación hover obligatoria [cite: 152, 183] */
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px); /* Efecto hover [cite: 81] */
+}
+
+.tarjeta img {
+  max-width: 100%; /* Unidades relativas en imágenes [cite: 76, 147] */
+  height: auto;
+  border-radius: 4px;
+}
+
+/* 5. Estilización de Componentes (Tablas y Formularios) [cite: 78, 182] */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+input,
+button {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Uso de % para responsividad [cite: 183] */
+}
+
+button {
+  background-color: var(--color-secundario);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* 6. Footer [cite: 65] */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--color-principal);
+  color: white;
+  margin-top: 2rem;
+}
